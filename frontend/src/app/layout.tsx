@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Video Analyzer",
+  title: "Video Audit PRO",
   description: "Analyze your videos with AI",
 };
 
@@ -13,19 +13,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      {/* Añadimos antialiased para que la fuente se vea fina y profesional como en Visily */}
       <body className="bg-[#F7F7F7] antialiased">
-        {/* Header Fixed - Altura exacta 64px (h-16) */}
+        {/* Header Fixed - Ahora con estética Morada Pro */}
         <header className="fixed top-0 left-0 right-0 h-16 bg-white border-b border-gray-100 z-50 flex items-center px-6">
-          <div className="max-w-[1200px] mx-auto w-full flex items-center">
-             {/* Usamos el color primary azul que definiste en tu config */}
-            <h1 className="text-xl font-bold text-[#2563EB]">Video Analyzer</h1>
+          <div className="max-w-[1400px] mx-auto w-full flex items-center">
+            {/* Logo actualizado al color corporativo morado */}
+            <h1 className="text-xl font-black tracking-tight text-[#111827] uppercase">
+              Video Audit <span className="text-[#7C4DFF]">Pro</span>
+            </h1>
           </div>
         </header>
         
-        {/* Contenedor de contenido:
-            - pt-16: Para que el contenido empiece justo debajo del header de 64px.
-            - min-h-screen: Para que el fondo gris cubra toda la pantalla.
+        {/* - pt-16: Para que el contenido empiece justo debajo del header.
+            - min-h-screen: Fondo consistente en toda la app.
         */}
         <div className="pt-16 min-h-screen">
           {children}
